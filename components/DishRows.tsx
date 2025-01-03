@@ -1,6 +1,5 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
-import Currency from 'react-currency-formatter';
 import { urlFor } from '@/sanity';
 import { MinusCircleIcon, PlusCircleIcon } from 'react-native-heroicons/solid';
 
@@ -26,7 +25,7 @@ const DishRows = ({
                         <Text className='text-lg mb-1'>{name}</Text>
                         <Text className='text-gray-400'>{desc}</Text>
                         <Text className='text-gray-400 mt-2'>
-                            <Currency currency='USD' quantity={price} />
+                            $ {price}.00
                         </Text>
                     </View>
                     <View>
