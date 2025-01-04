@@ -21,7 +21,7 @@ const HomeScreen = () => {
                     dishes[] ->
                 }
             }`).then(data => setFeaturedCategories(data));
-    }, []);
+    }, [navigation]);
 
     return (
         <SafeAreaView className='bg-white pt-5'>
